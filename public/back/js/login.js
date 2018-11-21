@@ -83,7 +83,10 @@ $(function() {
       dataType: "json",
       success: function( info ) {
         console.log( info );
-    
+        if ( info.success ) {
+          // alert( "登录成功" );
+          location.href = "index.html";
+        }
         if ( info.error === 1000 ) {
           // 用户名不存在
           $('#form').data("bootstrapValidator").updateStatus("username","INVALID","callback");
