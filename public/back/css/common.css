@@ -1,12 +1,142 @@
 .body_bg{
     background-color:  #222D32;
 }
+html,body{
+    height: 100%;
+}
+.nav > li > a{
+    margin: 0;
+    padding: 0;
+}
+.nav > li > a:hover, .nav > li > a:focus
+{
+    background-color: transparent;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  background-color: none;
+}
+
  .panel-title{
     height: 40px;
     line-height:40px;
     text-align: center;
     font-size: 20px;
 }
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
 .mt_150{
     margin-top: 150px;
+}
+.mt_20{
+    margin-top:20px;
+}
+.lt_aside{
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index: 77;
+}
+.brand{
+    height: 50px;
+    background-color: #367FA9;
+    line-height: 50px;
+
+    text-align: center;
+}
+.brand a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.user{
+    height: 180px;
+    text-align: center;
+    padding-top: 30px;
+}
+.user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50% 50%;
+}
+.user p{
+    margin-top:5px;
+    color:#fff;
+    font-size: 18px;
+}
+
+
+.nav li a{
+    height: 40px;
+    line-height: 40px;
+   
+   
+}
+.nav li a{
+    display: block;
+    padding-left:40px; 
+    border-left:3px solid transparent;        
+   
+
+}
+.nav li a.current{
+    background-color: #1D1F21;
+    border-left:3px solid #069;
+}
+.nav li span{ 
+    color:#fff
+}
+.nav li i{
+    color:#fff;
+    margin-right:3px;
+}
+.nav .child a{
+    color:#fff;
+    padding-left:60px;
+    display:none;
+}
+
+.lt_main{
+    
+    background-color: orange;
+    height:2000PX;
+    padding-left:180px;
+    padding-top:50px;
+    
+}
+.lt_topbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-left:180px;
+    background-color:#3C8DBC;
+    
+}
+.icon-left,
+.icon-right{
+    color:#fff;
+    height: 50px;
+    line-height: 50px;
+    font-size:18px;
+}
+.icon-left{
+    padding-left:20px;
+}
+.icon-right{
+    padding-right:20px;
+}
+.lt_main .lt_topbar{
+    display: block;
 }

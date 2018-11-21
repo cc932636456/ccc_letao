@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
 </head>
+
 <body>
-    第一次
+
+    <div class="lt_aside">
+        <div class="brand">
+            <a href="#">橙橙橙橙</a>
+        </div>
+        <div class="user">
+            <img src="./images/images/default.png" alt="">
+            <p>超级管理橙</p>
+        </div>
+        <div class="nav">
+
+            <li class="current">
+                <a href="user.html" >
+                    <i class="glyphicon glyphicon-user"></i>
+                    <span>用户管理</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="glyphicon glyphicon-list"></i>
+                    <span>分类管理</span>
+                </a>
+                <div class="child">
+                    <a href="first.html">一级分类</a>
+                    <a href="second.html">二级分类</a>
+                </div>
+
+            </li>
+            <li>
+                <a href="product.html">
+                    <i class="glyphicon glyphicon-tags"></i>
+                    <span>商品管理</span>
+                </a>
+            </li>
+        </div>
+    </div>
+    <!-- 右侧 -->
+    <div class="lt_main">
+        <div class="lt_topbar">
+           <a href="">
+                <div class="icon-left pull-left glyphicon glyphicon-align-justify"></div>
+           </a> 
+           <a href="">
+                <div class="icon-right pull-right glyphicon glyphicon-log-out"></div>
+           </a>
+            
+        </div>
+        <div class="container-fluid">
+                <ol class="breadcrumb mt_20">
+                        <li><a href="#">管理系统</a></li>
+                        <li><a href="#"></a>首页</li>
+                        
+                      </ol>
+        </div>
+    </div>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+    <script src="./lib/nprogress/nprogress.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
 </body>
+
 </html>
