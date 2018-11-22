@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!-- 左侧 -->
     <div class="lt_aside">
         <div class="brand">
             <a href="#">橙橙橙橙</a>
@@ -23,14 +23,12 @@
             <p>超级管理橙</p>
         </div>
         <div class="nav">
-
-            <li class="current">
+            <li >
                 <a href="user.html" >
                     <i class="glyphicon glyphicon-user"></i>
                     <span>用户管理</span>
                 </a>
-
-            </li> 
+            </li>
             <li>
                 <a href="javascript:;" id="category">
                     <i class="glyphicon glyphicon-list"></i>
@@ -40,72 +38,75 @@
                     <a href="first.html">一级分类</a>
                     <a href="second.html">二级分类</a>
                 </div>
-
             </li>
             <li>
-                <a href="product.html">
+                <a href="product.html" class="current" >
                     <i class="glyphicon glyphicon-tags"></i>
                     <span>商品管理</span>
                 </a>
             </li>
         </div>
     </div>
+
     <!-- 右侧 -->
     <div class="lt_main">
         <div class="lt_topbar">
-           <a href="#" class="icon-left pull-left">
-            <i class="glyphicon glyphicon-align-justify"></i>
-           </a> 
-           <a href="#" class="icon-right pull-right">
-            <i class="glyphicon glyphicon-log-out"></i>
-           </a>
-            
+            <a href="#" class="icon-left pull-left">
+                <i class="glyphicon glyphicon-align-justify"></i>
+            </a>
+            <a href="#" class="icon-right pull-right">
+                <i class="glyphicon glyphicon-log-out"></i>
+            </a>
         </div>
-        <div class="container-fluid">
-                <ol class="breadcrumb mt_20">
-                        <li><a href="#">管理系统</a></li>
-                        <li><a href="#"></a>首页</li>
-                        
-                      </ol>
-                      <div class="lt_content">
-                          <div class="echarts_left pull-left"></div>
-                          <div class="echarts_right pull-right"></div>
-                      </div>
 
+        <!-- 面包屑 -->
+        <div class="container-fluid">
+            <ol class="breadcrumb mt_20">
+                <li>
+                    <a href="#">管理系统</a>
+                </li>
+                <li>
+                    <a href="#"></a>商品管理</li>
+            </ol>
         </div>
     </div>
 
     <div class="modal fade" tabindex="-1" id="logoutModal">
 
-            <div class="modal-dialog modal-sm" >
-              <div class="modal-content">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-                  <h4 class="modal-title">温馨提示</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">温馨提示</h4>
                 </div>
                 <div class="modal-body">
-                  <p class="red">
-                    <i class="glyphicon glyphicon-info-sign"></i>
-                    <span>您确定要退出后台管理系统吗？</span>
-                  </p>
+                    <p class="red">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        <span>您确定要退出后台管理系统吗？</span>
+                    </p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                  <button type="button" class="btn btn-primary" id="logoutBtn">退出</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="logoutBtn">退出</button>
                 </div>
-              </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-          </div><!-- /.modal -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script> 
+
     <script src="./js/common.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/isLogin.js"></script>
-    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
